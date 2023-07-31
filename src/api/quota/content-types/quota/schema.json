@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotas",
+  "info": {
+    "singularName": "quota",
+    "pluralName": "quotas",
+    "displayName": "quota"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string"
+    }
+  }
+}
