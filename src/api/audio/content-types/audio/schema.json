@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audios",
+  "info": {
+    "singularName": "audio",
+    "pluralName": "audios",
+    "displayName": "Audio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 256,
+      "minLength": 1
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 2000,
+      "minLength": 10,
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "data": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

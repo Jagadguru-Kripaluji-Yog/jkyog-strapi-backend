@@ -12,13 +12,20 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "text",
+      "required": true,
+      "maxLength": 1000,
+      "minLength": 1
     },
     "author": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "maxLength": 256,
+      "minLength": 1
     },
     "data": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
