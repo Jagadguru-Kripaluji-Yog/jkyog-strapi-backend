@@ -4,7 +4,8 @@
   "info": {
     "singularName": "book",
     "pluralName": "books",
-    "displayName": "Book"
+    "displayName": "Book",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,30 +24,31 @@
       "maxLength": 2000,
       "minLength": 10
     },
-    "author": {
+    "private": {
+      "type": "boolean",
+      "required": true
+    },
+    "imageUrl": {
       "type": "string",
       "required": true,
-      "maxLength": 256,
       "minLength": 1
     },
-    "cover_image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
+    "color": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "unique": false
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false,
       "required": true
     },
-    "purchase_link": {
-      "type": "string",
-      "required": true
-    },
-    "data": {
-      "type": "string",
-      "required": true
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "books"
     }
   }
 }

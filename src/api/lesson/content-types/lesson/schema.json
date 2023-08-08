@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "singularName": "lesson",
+    "pluralName": "lessons",
+    "displayName": "lesson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "content": {
+      "type": "text",
+      "required": true,
+      "maxLength": 2000,
+      "minLength": 1
+    },
+    "imageUrl": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "contentUrl": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    }
+  }
+}

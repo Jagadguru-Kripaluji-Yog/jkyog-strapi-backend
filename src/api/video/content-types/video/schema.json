@@ -4,7 +4,8 @@
   "info": {
     "singularName": "video",
     "pluralName": "videos",
-    "displayName": "Video"
+    "displayName": "Video",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,28 +24,47 @@
       "maxLength": 2000,
       "minLength": 10
     },
-    "url": {
+    "videoUrl": {
       "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "videos"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "mappedBy": "videos"
+    },
+    "imageUrl": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "private": {
+      "type": "boolean",
+      "required": true
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false,
       "required": true
     },
     "duration": {
-      "type": "biginteger",
-      "required": true,
-      "min": "1"
-    },
-    "thumbnail": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "data": {
       "type": "string",
-      "required": true
+      "required": true,
+      "minLength": 1
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "videos"
     }
   }
 }
