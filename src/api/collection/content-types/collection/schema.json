@@ -42,6 +42,11 @@
       "required": true,
       "minLength": 1
     },
+    "popular": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
     "videos": {
       "type": "relation",
       "relation": "manyToMany",
