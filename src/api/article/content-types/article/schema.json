@@ -20,13 +20,13 @@
     },
     "collections": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::collection.collection",
       "mappedBy": "articles"
     },
     "courses": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::course.course",
       "mappedBy": "articles"
     },
@@ -40,12 +40,7 @@
       "type": "boolean",
       "required": true
     },
-    "firstContent": {
-      "type": "text",
-      "required": true,
-      "minLength": 1
-    },
-    "secondContent": {
+    "content": {
       "type": "text",
       "required": true,
       "minLength": 1
@@ -55,7 +50,7 @@
       "minLength": 1,
       "required": true
     },
-    "duration": {
+    "readingTimes": {
       "type": "string",
       "required": true,
       "minLength": 1

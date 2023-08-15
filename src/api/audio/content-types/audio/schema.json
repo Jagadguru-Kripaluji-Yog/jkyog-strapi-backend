@@ -61,15 +61,15 @@
     },
     "collections": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::collection.collection",
       "mappedBy": "audios"
     },
     "courses": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::course.course",
-      "mappedBy": "audios"
+      "mappedBy": "articles"
     }
   }
 }

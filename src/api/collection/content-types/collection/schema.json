@@ -4,7 +4,8 @@
   "info": {
     "singularName": "collection",
     "pluralName": "collections",
-    "displayName": "collection"
+    "displayName": "Collection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -49,19 +50,19 @@
     },
     "videos": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::video.video",
       "inversedBy": "collections"
     },
     "audios": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::audio.audio",
       "inversedBy": "collections"
     },
     "articles": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::article.article",
       "inversedBy": "collections"
     }

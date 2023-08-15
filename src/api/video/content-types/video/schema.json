@@ -31,15 +31,15 @@
     },
     "collections": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::collection.collection",
       "mappedBy": "videos"
     },
     "courses": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::course.course",
-      "mappedBy": "videos"
+      "mappedBy": "articles"
     },
     "imageUrl": {
       "type": "string",

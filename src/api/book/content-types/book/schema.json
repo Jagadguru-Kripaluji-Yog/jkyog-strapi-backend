@@ -33,6 +33,11 @@
       "required": true,
       "minLength": 1
     },
+    "websiteUrl": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
     "color": {
       "type": "string",
       "required": true,

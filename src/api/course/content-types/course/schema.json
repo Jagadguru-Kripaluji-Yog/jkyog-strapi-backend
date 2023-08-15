@@ -49,7 +49,7 @@
     },
     "videos": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::video.video",
       "inversedBy": "courses"
     },
@@ -60,13 +60,13 @@
     },
     "audios": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::audio.audio",
       "inversedBy": "courses"
     },
     "articles": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::article.article",
       "inversedBy": "courses"
     }
