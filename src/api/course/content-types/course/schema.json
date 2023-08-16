@@ -49,9 +49,9 @@
     },
     "videos": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::video.video",
-      "inversedBy": "courses"
+      "mappedBy": "courses"
     },
     "url": {
       "type": "string",
@@ -60,15 +60,15 @@
     },
     "audios": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::audio.audio",
-      "inversedBy": "courses"
+      "mappedBy": "courses"
     },
     "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::article.article",
-      "inversedBy": "courses"
+      "mappedBy": "courses"
     }
   }
 }

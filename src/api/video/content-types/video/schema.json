@@ -39,7 +39,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::course.course",
-      "mappedBy": "articles"
+      "mappedBy": "videos"
     },
     "imageUrl": {
       "type": "string",

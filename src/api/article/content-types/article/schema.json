@@ -20,15 +20,15 @@
     },
     "collections": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::collection.collection",
-      "mappedBy": "articles"
+      "inversedBy": "articles"
     },
     "courses": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::course.course",
-      "mappedBy": "articles"
+      "inversedBy": "articles"
     },
     "topic": {
       "type": "relation",

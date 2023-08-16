@@ -50,21 +50,21 @@
     },
     "videos": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::video.video",
-      "inversedBy": "collections"
+      "mappedBy": "collections"
     },
     "audios": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::audio.audio",
-      "inversedBy": "collections"
+      "mappedBy": "collections"
     },
     "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::article.article",
-      "inversedBy": "collections"
+      "mappedBy": "collections"
     }
   }
 }
