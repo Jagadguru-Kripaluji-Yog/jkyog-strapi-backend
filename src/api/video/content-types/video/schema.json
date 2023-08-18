@@ -33,13 +33,13 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::collection.collection",
-      "inversedBy": "audios"
+      "inversedBy": "videos"
     },
     "courses": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::course.course",
-      "inversedBy": "audios"
+      "inversedBy": "videos"
     },
     "imageUrl": {
       "type": "string",
@@ -66,5 +66,5 @@
       "target": "api::topic.topic",
       "inversedBy": "videos"
     }
-  },
+  }
 }
