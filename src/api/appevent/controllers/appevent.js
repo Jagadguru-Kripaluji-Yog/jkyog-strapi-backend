@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * event controller
+ * appevent controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::event.event');
+module.exports = createCoreController('api::appevent.appevent');

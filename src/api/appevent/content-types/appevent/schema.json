@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "events",
+  "collectionName": "appevents",
   "info": {
-    "singularName": "event",
-    "pluralName": "events",
-    "displayName": "Event",
+    "singularName": "appevent",
+    "pluralName": "appevents",
+    "displayName": "AppEvent",
     "description": ""
   },
   "options": {

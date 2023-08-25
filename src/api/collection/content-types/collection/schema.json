@@ -54,16 +54,16 @@
       "target": "api::video.video",
       "mappedBy": "collections"
     },
-    "audios": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::audio.audio",
-      "mappedBy": "collections"
-    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
+      "mappedBy": "collections"
+    },
+    "audios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::audio.audio",
       "mappedBy": "collections"
     }
   }

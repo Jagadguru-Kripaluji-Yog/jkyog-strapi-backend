@@ -25,7 +25,7 @@
       "minLength": 1
     },
     "data": {
-      "type": "string",
+      "type": "datetime",
       "required": true
     }
   }

@@ -40,11 +40,6 @@
       "type": "boolean",
       "required": true
     },
-    "content": {
-      "type": "text",
-      "required": true,
-      "minLength": 1
-    },
     "header": {
       "type": "string",
       "minLength": 1,
@@ -57,6 +52,11 @@
     },
     "imagePath": {
       "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "content": {
+      "type": "richtext",
       "required": true,
       "minLength": 1
     }

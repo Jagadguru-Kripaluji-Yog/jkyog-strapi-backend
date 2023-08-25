@@ -53,16 +53,16 @@
       "target": "api::video.video",
       "mappedBy": "courses"
     },
-    "url": {
-      "type": "string",
-      "minLength": 1,
-      "required": true
-    },
     "audios": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::audio.audio",
       "mappedBy": "courses"
+    },
+    "url": {
+      "type": "string",
+      "minLength": 1,
+      "required": true
     },
     "articles": {
       "type": "relation",
