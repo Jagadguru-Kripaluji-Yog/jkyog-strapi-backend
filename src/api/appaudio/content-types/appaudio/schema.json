@@ -19,12 +19,10 @@
       "minLength": 1
     },
     "description": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "rich"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "richtext",
+      "maxLength": 2000,
+      "minLength": 10,
+      "required": true
     },
     "imageUrl": {
       "type": "string",

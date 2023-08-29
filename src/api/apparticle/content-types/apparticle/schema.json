@@ -56,12 +56,9 @@
       "minLength": 1
     },
     "content": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "rich"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "richtext",
+      "required": true,
+      "minLength": 1
     },
     "language": {
       "type": "string",
